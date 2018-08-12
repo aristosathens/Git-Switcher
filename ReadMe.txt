@@ -1,0 +1,1 @@
+Command Line tool for switching Git repos in the same local folder
