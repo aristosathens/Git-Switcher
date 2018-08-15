@@ -54,7 +54,7 @@ func main() {
 		os.Rename("temp", ".git")
 		copyFileContents(cwd+"/.git/ReadMe.txt", cwd+"/ReadMe.txt")
 		copyFileContents(cwd+"/.git/.gitignore", cwd+"/.gitignore")
-		copyFileContents(cwd+"/.git/.gitattributes", cwd+"/gitattributes")
+		copyFileContents(cwd+"/.git/.gitattributes", cwd+"/.gitattributes")
 
 	}
 }
