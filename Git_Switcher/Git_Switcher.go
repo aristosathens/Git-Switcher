@@ -67,7 +67,7 @@ func allGitFolders(cwd string) []string {
 	output := make([]string, 0)
 	for _, item := range dir {
 		name := item.Name()
-		if name[:4] == ".git" && name != ".gitignore" && name != ".gitattributes" {
+		if len(name) > 3 && name[:4] == ".git" && name != ".gitignore" && name != ".gitattributes" {
 			output = append(output, name)
 		}
 	}
